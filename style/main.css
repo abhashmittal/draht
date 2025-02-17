@@ -1,0 +1,595 @@
+@import "_reset.css";
+
+@font-face {
+    font-family: Favorit Mono;
+    src: url(../assets/fonts/ABCFavoritMonoEdu-Regular.woff);
+}
+
+@font-face {
+    font-family: Favorit Bold;
+    src: url(../assets/fonts/ABCFavoritEdu-Bold.woff);
+}
+
+@media screen and (max-width: 420px) {
+    html, body {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    section {
+        scroll-snap-align: start;
+    }
+    
+    header {
+        color: #FF69B4;
+        font-family: Favorit Bold;
+        font-size: 17.5vw;
+        text-align: center;
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        margin-top: 1%;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 5em;
+      font-family: Favorit Bold;
+    }
+    
+    h2 {
+        color: #fff;
+        font-size: 10vw;
+        font-family: Favorit Bold;
+        line-height: 0.95em;
+    }
+    
+    
+    .draht {
+        transform: translate(0,-5%);
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        /* border: 1px white solid; */
+    }
+    
+    model-viewer {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* :not(:defined) > * {
+        display: none;
+      } */
+    
+      /* .Description {
+        
+        padding-top: 2em;
+        border: 1px solid black;
+        height: 100vh;
+        width: 100vw;
+      } */
+      
+      .lead {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 85%;
+      
+      }
+    
+    
+      .description {
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+    
+    
+      .slide1 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide1 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    
+      .slide1 h2 {
+        color: white;
+        position: absolute;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-60%);
+      }
+    
+      .slide2 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide2 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    
+      .slide2 h2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-60%);
+      }
+    
+      .slide3 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide3 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    
+      .slide3 h2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-60%);
+      }
+    
+      .slide4 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide4 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    
+      .slide4 h2 {
+        color: black;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-60%);
+      }
+    
+      .slide5 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide5 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .slide5 h2 {
+        color: black;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-60%);
+      }
+
+      .slide6 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide6 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .slide6 h2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-60%);
+      }
+
+
+      .slide7 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slide7 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+
+    
+    .shop{
+        bottom: 0.75em;
+        position: fixed;
+        display: block;
+        margin-left: 50vw;
+        z-index: 10;
+        background-color: white;
+        transform: translate(-50%, 0);
+        border-radius: 2em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .shop:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        transition: all 4ms;
+        cursor: crosshair;
+    }
+    
+    h1 {
+        font-family: 'Favorit Bold';
+        font-size: 1.25em;
+    }
+    
+    .shopify {
+        position: fixed;
+        transform: translate(-10%, -100%);
+        border: 1px solid red;
+        height: 2.75em !important;
+        width: 5em;
+        opacity: 0;
+    }
+    
+    .shopify:hover {
+        cursor: crosshair;
+    }
+
+    p {
+      font-family: Favorit Bold;
+      font-size: 1em;
+    }
+    footer {
+      display: flex;
+      z-index: 100;
+      background-color: black;
+      width: 100vw;
+      height: 4.25em;
+      position: sticky;
+      color: white;
+      align-items: center;
+      justify-content: center ;
+      text-align: center;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    a {
+      color: white;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    html, body {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    section {
+        scroll-snap-align: start;
+    }
+    
+    header {
+        color: #FF69B4;
+        font-family: Favorit Bold;
+        font-size: 17.5vw;
+        text-align: center;
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        margin-top: 1%;
+    }
+    
+    h2 {
+        color: #fff;
+        font-size: 7.5vw;
+        font-family: Favorit Bold;
+        line-height: 0.9em;
+    }
+    
+    
+    .draht {
+        transform: translate(0, 2.5%);
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        /* border: 1px white solid; */
+    }
+    
+    model-viewer {
+        width: 100%;
+        height: 98%;
+    }
+    
+    /* :not(:defined) > * {
+        display: none;
+      } */
+    
+      /* .Description {
+        
+        padding-top: 2em;
+        border: 1px solid black;
+        height: 100vh;
+        width: 100vw;
+      } */
+      
+      .lead {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 85%;
+      
+      }
+    
+    
+      .description {
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+    
+    
+      .slide1 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide1 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    
+      .slide1 h2 {
+        color: white;
+        position: absolute;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-50%);
+      }
+    
+      .slide2 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide2 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    
+      .slide2 h2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-50%);
+      }
+    
+      .slide3 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide3 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    
+      .slide3 h2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-50%);
+      }
+    
+      .slide4 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide4 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    
+      .slide4 h2 {
+        color: black;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-50%);
+      }
+    
+      .slide5 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide5 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .slide5 h2 {
+        color: black;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-50%);
+      }
+      
+      .slide6 {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .slide6 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .slide6 h2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-50%);
+      }
+
+      .slide7 {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slide7 img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .slide7 h2 {
+        color: black;
+        position: absolute;
+        z-index: 2;
+        padding-left: 10%;
+        padding-right: 1.5em;
+        margin-top: 50vh;
+        transform: translate(0,-50%);
+      }
+
+    .shop{
+        bottom: 0.75em;
+        position: fixed;
+        display: block;
+        margin-left: 50vw;
+        z-index: 10;
+        background-color: white;
+        transform: translate(-50%, 0);
+        border-radius: 2em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .shop:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        transition: all 4ms;
+    }
+    
+    h1 {
+        font-family: 'Favorit Bold';
+        font-size: 1.25em;
+    }
+    
+    .shopify {
+        position: fixed;
+        transform: translate(-10%, -100%);
+        border: 1px solid red;
+        height: 2.75em !important;
+        width: 5em;
+        opacity: 0;
+    }
+
+    p {
+      font-family: Favorit Bold;
+      font-size: 1em;
+    }
+    footer {
+      display: flex;
+      z-index: 100;
+      background-color: black;
+      width: 100vw;
+      height: 4.25em;
+      position: sticky;
+      color: white;
+      align-items: center;
+      justify-content: center ;
+      text-align: center;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    a {
+      color: white;
+    }
+}
+
